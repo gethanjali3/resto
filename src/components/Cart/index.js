@@ -27,7 +27,7 @@ const Cart = () => {
       <button type="button" onClick={removeAllCartItems}>
         Remove All
       </button>
-      {listview()}
+      {cartList.length !== 0 ? listview() : empty()}
     </div>
   )
 }

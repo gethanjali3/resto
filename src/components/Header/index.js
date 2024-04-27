@@ -17,10 +17,12 @@ const Header = () => {
     }
 
     return (
+        <div>
         <Link to='/home'><h1>{name}</h1></Link>
         <Link to='/cart'><button type='button'>c</button></Link>
         <p>{cartList.length}</p>
         <Link to='/login'><button type='button'>Logout</button></Link>
+        </div>
     )
 }
 
